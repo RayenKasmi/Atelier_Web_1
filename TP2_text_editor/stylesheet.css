@@ -1,0 +1,87 @@
+body {
+    font-family:cursive;
+    font-size: larger;
+}
+
+#textInput {
+    width: 70%;
+    font-size: larger;
+}
+#texteButton {
+    width: 100px;
+    height: 30px;
+}
+
+#text_box {
+    border:1px solid black;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap:1%;
+}
+
+.drop_down_menu {
+    width : 33%;
+    font-size: larger;
+}
+
+#fontSize {
+    text-align: center;
+}
+
+#colorSelect option#red {
+    background-color: red;
+}
+
+#colorSelect option#blue {
+    background-color: blue;
+}
+
+#colorSelect option#lightBlue {
+    background-color: lightblue;
+}
+
+#colorSelect option#green {
+    background-color: green;
+}
+
+#colorSelect option#orange {
+    background-color: orange;
+}
+
+#colorSelect option#purple {
+    background-color: purple;
+}
+
+#colorSelect option#pink {
+    background-color: pink;
+}
+
+#colorSelect option#black {
+    background-color: black;
+}
+
+.checkbox_label {
+    font-size: 25px;
+}
+
+.checkbox_label input[type="checkbox"]  {
+    width: 20px;
+    height: 20px;
+}
+
+.buttonContainer{
+    display: flex; 
+    justify-content: center; 
+}
+
+#textStyleButton {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: large;
+}
