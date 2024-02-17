@@ -16,21 +16,28 @@ refresh_style_button.addEventListener('click',refreshStyle)
 
 function refreshTexte(){
     //get input
-    var input = new_text_input.value;
+    let input = new_text_input.value;
+
     //updates text
-    text_box.textContent = input;
+    if(input.trim()){
+        text_box.textContent = input;
+    }
 }
 
 function refreshStyle(){
     // get color 
-    var color = color_select.options[color_select.selectedIndex].value;
+    let color = color_select.options[color_select.selectedIndex].value;
+
     // get font 
-    var font = font_select.options[font_select.selectedIndex].value;
+    let font = font_select.options[font_select.selectedIndex].value;
+
     //get size
-    var size = size_select.value;
+    let size = size_select.value;
+    
     //get bold and italics
     const bold_select = document.querySelector('#bold_box');
     const isBold = bold_select.checked;
+
     const italics_select = document.querySelector('#italic_box');
     const isItalics = italics_select.checked;
 
@@ -59,7 +66,7 @@ color_select.addEventListener("change",refrechColorSelectBackgroundColor);
 
 function refrechColorSelectBackgroundColor(){
     // get color 
-    var background_color = color_select.options[color_select.selectedIndex].value;
+    let background_color = color_select.options[color_select.selectedIndex].value;
     //refrech background color
     color_select.style.backgroundColor = background_color;
 }
